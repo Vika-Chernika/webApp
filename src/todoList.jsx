@@ -17,6 +17,9 @@ import { ItemsList } from './itemsList';
 
   addItem = (item => {
     let newItems = this.state.items;
+    if (!item){
+      alert('Empty string!');
+    }
     newItems.push(item);
     this.setState({ items: newItems });
   });

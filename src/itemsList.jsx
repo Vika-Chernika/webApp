@@ -9,7 +9,7 @@ import { render } from 'react-dom';
           <div className="text">{item}</div>
           <div
             onClick={this.props.clickAction.bind(this, i)}
-            className="delete fa fa-trash"></div>
+            className="delete fa fa-trash-o"></div>
         </li>
       );
     });
